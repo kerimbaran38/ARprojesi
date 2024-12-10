@@ -1,0 +1,71 @@
+# Unity Generated Files
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+AssetBundles/
+
+# Visual Studio / MonoDevelop generated files
+.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Unity Package Manager
+Packages/*-lock.json
+
+# Built Data
+Build/
+Builds/
+
+# Crash Reports
+sysinfo.txt
+
+# Addressable Asset Cache
+/Assets/AddressableAssetsData/AssetGroups*
+/Assets/AddressableAssetsData/AddressablesGenerated*
+
+# Unity Cloud Build
+[Uu]ser[Ss]ettings/
+
+# JetBrains Rider
+.idea/
+*.idea/
+*.ipr
+*.iws
+*.iml
+
+# Other files
+*.swp
+*.bak
+*.backup
+*.tmp
+*.temp
+*.orig
+*.rej
+*.log
+*.mdmp
+
+# AR-specific Exclusions
+# Exclude ARCore, ARKit, and related platform-specific SDK files if they are generated during build.
+*.apk
+*.ipa
