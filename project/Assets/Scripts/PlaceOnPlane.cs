@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 public class PlaceOnPlane : MonoBehaviour
 {
-    public GameObject solarSystemPrefab; // Assign the Solar System prefab here
+    public GameObject solarSystemPrefab; // Prefab for the Solar System
     private ARRaycastManager raycastManager;
     private GameObject spawnedObject;
 
@@ -23,11 +23,13 @@ public class PlaceOnPlane : MonoBehaviour
         {
             Vector2 touchPosition = Input.GetTouch(0).position;
 
-            // Use raycastManager.Raycast and pass the static 'hits' list
+            // Perform the raycast
             if (raycastManager.Raycast(touchPosition, hits, TrackableType.PlaneWithinPolygon))
             {
+                // Get the first hit position
                 Pose hitPose = hits[0].pose;
 
+                // Instantiate the Solar System at the hit position
                 if (spawnedObject == null)
                 {
                     spawnedObject = Instantiate(solarSystemPrefab, hitPose.position, hitPose.rotation);

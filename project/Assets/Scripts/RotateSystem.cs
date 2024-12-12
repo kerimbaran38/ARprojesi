@@ -12,7 +12,7 @@ public class RotateSystem : MonoBehaviour
             if (touch.phase == TouchPhase.Moved)
             {
                 float rotationX = touch.deltaPosition.x * rotationSpeed * Time.deltaTime;
-                transform.Rotate(Vector3.up, -rotationX);
+                transform.Rotate(Vector3.up, -rotationX, Space.World); // Constrain to Y-axis rotation only
             }
         }
     }
